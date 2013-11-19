@@ -72,3 +72,5 @@ with following `bower.json`:
   }
 }
 ```
+
+Have fun!
