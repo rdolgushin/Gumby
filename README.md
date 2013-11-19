@@ -37,9 +37,38 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER I
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-Differences from standard Gumby
--------------------------------
+CUSTOM PART
+-----------
+
+### Differences from standard Gumby instance
 
 * The emphasis on the use of CSS instead of SASS
 * Disabled Google fonts import in `gumby.css` for using custom
   subsets of *OpenSans* (or not using this font at all)
+
+### Using with [Bower](http://bower.io)
+
+Custom revisions have tags with `c` postfix, for example `2.5.15c`.
+
+You can grab its by command:
+
+```bash
+$ bower install gumby=git://github.com/rdolgushin/Gumby.git#2.5.15c
+```
+
+or
+
+```bash
+$ bower install
+```
+
+with following `bower.json`:
+
+```json
+{
+  ...
+  "dependencies": {
+    "gumby": "git://github.com/rdolgushin/Gumby.git#2.5.15c"
+  }
+}
+```
